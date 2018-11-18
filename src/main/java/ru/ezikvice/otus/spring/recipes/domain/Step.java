@@ -1,34 +1,15 @@
 package ru.ezikvice.otus.spring.recipes.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import lombok.Data;
 import org.springframework.data.annotation.Id;
 
+@Data
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Step {
     @Id
-    private String id;
+    private String stepId;
     private Integer order;
     private String text;
 
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public Integer getOrder() {
-        return order;
-    }
-
-    public void setOrder(Integer order) {
-        this.order = order;
-    }
-
-    public String getText() {
-        return text;
-    }
-
-    public void setText(String text) {
-        this.text = text;
-    }
 }

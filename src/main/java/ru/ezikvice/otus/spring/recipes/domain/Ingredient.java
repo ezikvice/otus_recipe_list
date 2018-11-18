@@ -5,15 +5,15 @@ import org.springframework.data.annotation.Id;
 public class Ingredient {
 
     @Id
-    private String id;
+    private String ingredientId;
     private String name;
 
-    public String getId() {
-        return id;
+    public String getIngredientId() {
+        return ingredientId;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setIngredientId(String ingredientId) {
+        this.ingredientId = ingredientId;
     }
 
     public String getName() {

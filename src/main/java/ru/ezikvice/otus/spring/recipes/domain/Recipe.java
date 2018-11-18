@@ -6,17 +6,17 @@ import java.util.List;
 
 public class Recipe {
     @Id
-    private String id;
+    private String recipeId;
     private List<Ingredient> ingredients;
     private List<Step> steps;
     private String description;
 
-    public String getId() {
-        return id;
+    public String getRecipeId() {
+        return recipeId;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setRecipeId(String recipeId) {
+        this.recipeId = recipeId;
     }
 
     public List<Ingredient> getIngredients() {
