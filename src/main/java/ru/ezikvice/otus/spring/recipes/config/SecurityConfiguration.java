@@ -18,7 +18,7 @@ import ru.ezikvice.otus.spring.recipes.service.MyUserDetailsService;
 
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled = true)
-@Order(SecurityProperties.ACCESS_OVERRIDE_ORDER)
+//@Order(SecurityProperties.BASIC_AUTH_ORDER)
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
     @Autowired

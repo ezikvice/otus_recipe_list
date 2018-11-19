@@ -19,7 +19,7 @@
 package ru.ezikvice.otus.spring.recipes.service;
 
 
-import com.mongodb.client.MongoCollection;
+import org.jongo.MongoCollection;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.InternalAuthenticationServiceException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
